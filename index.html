@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Prifi — Mere Dil Ki Kahani 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Noto+Sans+Devanagari:wght@300;400;600&family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:ital,wght@1,400;1,700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cur"></div>
+<div id="dot"></div>
+<canvas id="bgCanvas"></canvas>
+<canvas id="cCanvas"></canvas>
+
+<!-- PETALS -->
+<div id="petals"></div>
+
+<!-- ════════════════════════════════════
+     HERO
+════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-orb orb1" style="position:absolute"></div>
+  <div class="hero-orb orb2" style="position:absolute"></div>
+  <div class="hero-orb orb3" style="position:absolute"></div>
+
+  <div class="hero-badge">✦ Sirf Tere Liye ✦</div>
+  <h1 class="hero-name">Prifi</h1>
+  <p class="hero-tagline">Mere Dil Ki Rani, Meri Duniya</p>
+
+  <div class="hero-chars">
+    <span>🌸</span>
+    <span>💖</span>
+    <span>✨</span>
+    <span>🌙</span>
+  </div>
+
+  <p class="scroll-hint">✦ &nbsp; Scroll Karo &nbsp; ✦</p>
+</section>
+
+<!-- ════════════════════════════════════
+     SAYARI
+════════════════════════════════════ -->
+<section id="sayari">
+  <div class="sec-header">
+    <span class="sec-label">✦ Dil Ki Awaaz ✦</span>
+    <h2 class="sec-title">Tere Liye <span>Shayari</span></h2>
+  </div>
+  <div class="divider"><div class="div-line"></div><span class="div-star">✦</span><div class="div-line"></div></div>
+  <div class="sayari-grid">
+
+    <div class="s-card" style="transition-delay:.05s">
+      <div class="s-num">01</div>
+      <div class="s-icon">🌹</div>
+      <p class="s-text">
+        Chaand sitaaron mein teri tasveer hai,<br>
+        Har saans mein teri khushboo hai,<br>
+        Duniya bhar ki tamanna chhod di,<br>
+        Kyunki meri duniya sirf <em>tu hi tu</em> hai.
+      </p>
+    </div>
+
+    <div class="s-card" style="transition-delay:.1s">
+      <div class="s-num">02</div>
+      <div class="s-icon">💫</div>
+      <p class="s-text">
+        Tujhe dekha to laga jaise,<br>
+        Khuda ne khud utar ke,<br>
+        Ek haseen khwaab bana diya —<br>
+        Aur uska naam rakh diya <em>Prifi</em>.
+      </p>
+    </div>
+
+    <div class="s-card" style="transition-delay:.15s">
+      <div class="s-num">03</div>
+      <div class="s-icon">🌙</div>
+      <p class="s-text">
+        Raat ke taare bhi poochhe mujhse,<br>
+        "Kyun teri aankhon mein chamak alag hai?"<br>
+        Maine kaha — <em>Prifi</em> ki yaad hai,<br>
+        Isliye dil ka har kona <em>roshan</em> hai.
+      </p>
+    </div>
+
+    <div class="s-card" style="transition-delay:.2s">
+      <div class="s-num">04</div>
+      <div class="s-icon">🎴</div>
+      <p class="s-text">
+        Anime wali duniya se tu aayi hai kya?<br>
+        Itni sundar, itni pyaari, itni anokhi —<br>
+        Tujhe dekh ke lagta hai,<br>
+        Mere liye hi <em>likhi gayi</em> yeh kahani.
+      </p>
+    </div>
+
+    <div class="s-card" style="transition-delay:.25s">
+      <div class="s-num">05</div>
+      <div class="s-icon">🦋</div>
+      <p class="s-text">
+        Teri har muskaan pe,<br>
+        Dil ek naya geet gaata hai,<br>
+        Teri ek nazar se,<br>
+        Poora aasman <em>mehek jaata</em> hai.
+      </p>
+    </div>
+
+    <div class="s-card" style="transition-delay:.3s">
+      <div class="s-num">06</div>
+      <div class="s-icon">💎</div>
+      <p class="s-text">
+        Tere bina yeh zindagi,<br>
+        Rangon ke bina tasveeron jaisi hai,<br>
+        Tu ho meri zindagi mein,<br>
+        Tab yeh duniya <em>jannat jaisi</em> hai.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     REASONS I LOVE YOU
+════════════════════════════════════ -->
+<section id="reasons">
+  <div class="sec-header">
+    <span class="sec-label">✦ Wajah ✦</span>
+    <h2 class="sec-title">Kyun Karta Hoon <span>Pyaar</span></h2>
+  </div>
+  <div class="divider"><div class="div-line"></div><span class="div-star">✦</span><div class="div-line"></div></div>
+  <div class="reasons-grid">
+    <div class="r-card"><span class="r-icon">😊</span><span class="r-label">Teri Muskaan</span><p class="r-desc">Jab tu muskurati hai, duniya ruk jaati hai</p></div>
+    <div class="r-card"><span class="r-icon">✨</span><span class="r-label">Teri Aankhein</span><p class="r-desc">Sitaaron se bhi zyada chamakti hai</p></div>
+    <div class="r-card"><span class="r-icon">💭</span><span class="r-label">Teri Soch</span><p class="r-desc">Itni gehri, itni khoobsurat</p></div>
+    <div class="r-card"><span class="r-icon">🌸</span><span class="r-label">Teri Aadat</span><p class="r-desc">Har aadat mujhe aur pyaar se bharti hai</p></div>
+    <div class="r-card"><span class="r-icon">🎴</span><span class="r-label">Anime Love</span><p class="r-desc">Teri dunia bhi meri duniya ban gayi</p></div>
+    <div class="r-card"><span class="r-icon">💖</span><span class="r-label">Tera Dil</span><p class="r-desc">Sabse sundar, sabse sachcha</p></div>
+    <div class="r-card"><span class="r-icon">🔥</span><span class="r-label">Teri Energy</span><p class="r-desc">Jo mujhe jeena sikhati hai</p></div>
+    <div class="r-card"><span class="r-icon">🌙</span><span class="r-label">Har Waqt</span><p class="r-desc">24/7 — bas tujhse hi milna chahta hoon</p></div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     ANIME SECTION
+════════════════════════════════════ -->
+<section id="anime-sec">
+  <div class="sec-header">
+    <span class="sec-label">✦ Teri Duniya ✦</span>
+    <h2 class="sec-title">Anime Ki <span>Jadui Duniya</span></h2>
+  </div>
+  <div class="divider"><div class="div-line"></div><span class="div-star">✦</span><div class="div-line"></div></div>
+  <div class="anime-banner">
+    <p style="font-size:3.5rem;margin-bottom:20px;position:relative;z-index:1">🌸 ⭐ 🌙</p>
+    <p class="anime-quote" style="position:relative;z-index:1">
+      Tu anime dekhti hai,<br>
+      Aur main <span>tujhe</span> dekhta hoon —<br>
+      Teri aankhon mein wahi jadoo hai<br>
+      Jo sirf <span>manga ki heroines</span> mein hota hai.
+    </p>
+    <div class="anime-tags">
+      <div class="a-tag">🌸 Sakura jaisi</div>
+      <div class="a-tag">⭐ Taare jaisi aankhein</div>
+      <div class="a-tag">🌙 Raat si rahasya</div>
+      <div class="a-tag">🎴 Anime soul</div>
+      <div class="a-tag">💫 Magical presence</div>
+      <div class="a-tag">🌺 Rare & beautiful</div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     PROPOSAL
+════════════════════════════════════ -->
+<section id="proposal">
+  <div class="ring ring1"></div>
+  <div class="ring ring2"></div>
+  <div class="ring ring3"></div>
+  <div class="p-wrap">
+    <div class="p-box">
+      <span class="big-heart">💝</span>
+      <h2 class="p-title">Dil Ki Sabse Badi Baat</h2>
+      <p class="p-msg">
+        <span class="hi">Prifi</span>,<br>
+        Tumse milke laga jaise koi khwaab sachcha ho gaya.<br>
+        Tumhari hasi mein itni roshni hai ki raat ko bhi din lag jaata hai.<br>
+        Main tumhare bina apni zindagi ka ek pal bhi nahi soch sakta.
+      </p>
+      <div class="p-shayari">
+        "Jo dil mein hai, woh aankhon se chupaana mushkil hai,<br>
+        Tujhse pyaar karna meri zindagi ka<br>
+        sabse sundar faisla hai."
+      </div>
+      <p class="p-msg" style="margin-top:15px">
+        Tum meri subah ho, meri shaam ho,<br>
+        Meri zindagi ka sabse khoobsurat anjaam ho.<br>
+        <em style="color:var(--pk2)">Bas tum ho, aur kuch chahiye nahi mujhe.</em>
+      </p>
+      <p class="q-text">Kya Tum Meri Ho Jaogi? 🌸</p>
+      <div class="btn-row">
+        <button class="btn-yes" onclick="sayYes()">💖 Haan, Bilkul!</button>
+        <button class="btn-no" id="noBtn" onmouseover="runAway()" ontouchstart="runAway()">😅 Sochungi...</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════
+     SUCCESS
+════════════════════════════════════ -->
+<div id="success">
+  <div class="s-emoji">🎊</div>
+  <div class="s-title">Yay Prifi!! 💕</div>
+  <p class="s-msg">
+    Aaj se tum meri ho, aur main tumhara!<br>
+    Yeh pal meri zindagi ka<br>
+    <strong style="color:var(--pk2)">sabse sundar pal</strong> ban gaya. 💖
+  </p>
+  <div class="s-poem">
+    "Do dil miley, do khwaab jude —<br>
+    Yeh mohabbat hai, sab se juda."
+  </div>
+  <button class="s-close" onclick="closeSuccess()">💝 Humare Raaz Ki Duniya</button>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p class="f-main">Sirf Prifi ke liye <span class="f-heart">❤</span></p>
+  <p class="f-sub">✦ &nbsp; Tumhari muskaan hi meri duniya hai &nbsp; ✦</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
